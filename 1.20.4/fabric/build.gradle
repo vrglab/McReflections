@@ -34,6 +34,9 @@ dependencies {
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
 
     implementation 'org.javassist:javassist:3.28.0-GA'
+    compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
+    implementation 'org.jboss:jboss-vfs:3.3.2.Final'
+    implementation 'org.dom4j:dom4j:2.1.4'
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')

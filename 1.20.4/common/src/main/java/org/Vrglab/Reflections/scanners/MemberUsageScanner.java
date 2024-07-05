@@ -16,8 +16,8 @@ import javassist.expr.NewExpr;
 import org.Vrglab.Reflections.ReflectionsException;
 import org.Vrglab.Reflections.util.ClasspathHelper;
 import org.Vrglab.Reflections.util.JavassistHelper;
+import org.lwjgl.system.NonnullDefault;
 
-import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -33,7 +33,7 @@ public class MemberUsageScanner implements Scanner {
         this(ClasspathHelper.classLoaders());
     }
 
-    public MemberUsageScanner(@Nonnull ClassLoader[] classLoaders) {
+    public MemberUsageScanner(@NonnullDefault ClassLoader[] classLoaders) {
         this.classLoaders = classLoaders;
     }
 

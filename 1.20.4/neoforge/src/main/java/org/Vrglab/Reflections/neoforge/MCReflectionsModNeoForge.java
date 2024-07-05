@@ -7,7 +7,6 @@ import org.Vrglab.Reflections.MCReflectionsMod;
 @Mod(MCReflectionsMod.MOD_ID)
 public final class MCReflectionsModNeoForge {
     public MCReflectionsModNeoForge() {
-        // Run our common setup.
-        MCReflectionsMod.init();
+
     }
 }
