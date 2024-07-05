@@ -6,11 +6,11 @@
     "version": "${version}",
     "metadata": {
       "name": "Mc Reflections",
-      "description": "This is an MCReflections description! Tell everyone what your mod is about!",
+      "description": "This project's attempts bring the org.Reflections library to Minecraft architectury",
       "contributors": {
-        "Me!": "Author"
+        "Vrglab": "Author"
       },
-      "icon": "assets/mc_reflections/icon.png"
+      "icon": "logo.png"
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {

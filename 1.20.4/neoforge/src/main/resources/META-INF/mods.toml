@@ -1,15 +1,15 @@
 modLoader = "javafml"
 loaderVersion = "[2,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "MIT"
 
 [[mods]]
 modId = "mc_reflections"
 version = "${version}"
 displayName = "Mc Reflections"
-authors = "Me!"
+authors = "Vrglab"
 description = '''
-This is an MCReflections description! Tell everyone what your mod is about!
+This project's attempts bring the org.Reflections library to Minecraft architectury
 '''
 #logoFile = ""
 

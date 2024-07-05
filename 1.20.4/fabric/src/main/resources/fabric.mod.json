@@ -3,16 +3,16 @@
   "id": "mc_reflections",
   "version": "${version}",
   "name": "Mc Reflections",
-  "description": "This is an MCReflections description! Tell everyone what your mod is about!",
+  "description": "This project's attempts bring the org.Reflections library to Minecraft architectury",
   "authors": [
-    "Me!"
+    "Vrglab"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-MCReflections-mod"
   },
-  "license": "CC0-1.0",
-  "icon": "assets/mc_reflections/icon.png",
+  "license": "MIT",
+  "icon": "logo.png",
   "environment": "*",
   "entrypoints": {
     "main": [
