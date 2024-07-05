@@ -154,7 +154,8 @@ public class Reflections implements NameHelper {
     /**
      * Convenient constructor for Reflections.
      * <p></p>see the javadoc of {@link ConfigurationBuilder#build(Object...)} for details.
-     * <p></p><i>it is preferred to use {@link org.Vrglab.Reflections.util.ConfigurationBuilder} instead.</i> */
+     * <p></p><i>it is preferred to use {@link org.Vrglab.Reflections.util.ConfigurationBuilder} instead.</i>
+     */
     public Reflections(Object... params) {
         this(ConfigurationBuilder.build(params));
     }
@@ -234,7 +235,7 @@ public class Reflections implements NameHelper {
     /** collect saved Reflection xml resources and merge it into a Reflections instance
      * <p>by default, resources are collected from all urls that contains the package META-INF/reflections
      * and includes files matching the pattern .*-reflections.xml
-     * */
+     */
     public static Reflections collect() {
         return collect("META-INF/reflections/", new FilterBuilder().includePattern(".*-reflections\\.xml"));
     }
