@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "mc_reflections",
+  "version": "${version}",
+  "name": "Mc Reflections",
+  "description": "This is an MCReflections description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-MCReflections-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/mc_reflections/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.Vrglab.Reflections.fabric.MCReflectionsModFabric"
+    ],
+    "client": [
+      "org.Vrglab.Reflections.fabric.client.MCReflectionsModFabricClient"
+    ]
+  },
+  "mixins": [
+    "mc_reflections.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "architectury": ">=11.1.17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

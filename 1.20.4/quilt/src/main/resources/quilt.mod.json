@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "mc_reflections",
+    "version": "${version}",
+    "metadata": {
+      "name": "Mc Reflections",
+      "description": "This is an MCReflections description! Tell everyone what your mod is about!",
+      "contributors": {
+        "Me!": "Author"
+      },
+      "icon": "assets/mc_reflections/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": [
+        "org.Vrglab.Reflections.quilt.MCReflectionsModQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.20.4"
+      },
+      {
+        "id": "architectury",
+        "version": ">=11.1.17"
+      }
+    ]
+  },
+  "mixin": [
+    "mc_reflections.mixins.json"
+  ]
+}

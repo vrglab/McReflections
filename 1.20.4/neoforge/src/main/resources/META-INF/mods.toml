@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "mc_reflections"
+version = "${version}"
+displayName = "Mc Reflections"
+authors = "Me!"
+description = '''
+This is an MCReflections description! Tell everyone what your mod is about!
+'''
+#logoFile = ""
+
+[[dependencies.mc_reflections]]
+modId = "neoforge"
+type = "required"
+versionRange = "[20.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mc_reflections]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.20.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mc_reflections]]
+modId = "architectury"
+type = "required"
+versionRange = "[11.1.17,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "mc_reflections.mixins.json"
