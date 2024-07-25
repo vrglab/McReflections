@@ -8,7 +8,6 @@ dependencies {
     // Do NOT use other classes from Fabric Loader.
     modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
 
-    implementation 'org.javassist:javassist:3.28.0-GA'
     compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
     implementation 'org.jboss:jboss-vfs:3.3.2.Final'
     implementation 'org.dom4j:dom4j:2.1.4'

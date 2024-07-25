@@ -35,7 +35,6 @@ dependencies {
     modImplementation "org.quiltmc.quilted-fabric-api:quilted-fabric-api:$rootProject.quilted_fabric_api_version"
 
 
-    implementation 'org.javassist:javassist:3.28.0-GA'
     compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
     implementation 'org.jboss:jboss-vfs:3.3.2.Final'
     implementation 'org.dom4j:dom4j:2.1.4'
@@ -54,11 +53,8 @@ dependencies {
 }
 
 processResources {
-    inputs.property 'group', project.group
-    inputs.property 'version', project.version
-
     filesMatching('quilt.mod.json') {
-        expand group: project.group, version: project.version
+        expand rootProject.properties
     }
 }
 

@@ -3,10 +3,10 @@
   "quilt_loader": {
     "group": "${group}",
     "id": "mc_reflections",
-    "version": "${version}",
+    "version": "${mod_version}",
     "metadata": {
       "name": "Mc Reflections",
-      "description": "This project's attempts bring the org.Reflections library to Minecraft architectury",
+      "description": "This Project attempts to Port Org.Reflection to a multi-loader environment",
       "contributors": {
         "Vrglab": "Author"
       },

@@ -33,7 +33,6 @@ dependencies {
     // Architectury API. This is optional, and you can comment it out if you don't need it.
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
 
-    implementation 'org.javassist:javassist:3.28.0-GA'
     compileOnly 'javax.servlet:javax.servlet-api:4.0.1'
     implementation 'org.jboss:jboss-vfs:3.3.2.Final'
     implementation 'org.dom4j:dom4j:2.1.4'
@@ -45,10 +44,8 @@ dependencies {
 }
 
 processResources {
-    inputs.property 'version', project.version
-
     filesMatching('fabric.mod.json') {
-        expand version: project.version
+        expand rootProject.properties
     }
 }
 

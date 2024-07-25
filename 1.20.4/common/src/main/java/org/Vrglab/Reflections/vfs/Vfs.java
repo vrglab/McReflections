@@ -206,6 +206,18 @@ public abstract class Vfs {
      * <p>jarInputStream - creates a {@link JarInputDir} over jar files (contains ".jar!/" in it's name), using Java's JarInputStream
      * */
     public enum DefaultUrlTypes implements UrlType {
+        union {
+            @Override
+            public boolean matches(URL url) throws Exception {
+                return url.getProtocol().equals("union");
+            }
+
+            @Override
+            public Dir createDir(URL url) throws Exception {
+                return new UnionUrls(url);
+            }
+        },
+
         jarFile {
             public boolean matches(URL url) {
                 return url.getProtocol().equals("file") && hasJarFileInPath(url);

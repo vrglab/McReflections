@@ -192,7 +192,7 @@ public class Reflections implements NameHelper {
                         }
                     }
                 }
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 if (log != null) log.warn("could not create Vfs.Dir from url. ignoring the exception and continuing", e);
             }
         });
