@@ -3,7 +3,12 @@
 [![License](https://img.shields.io/github/license/vrglab/McReflections)](LICENSE.txt) [![Releases](https://img.shields.io/github/v/release/vrglab/McReflections)](https://github.com/vrglab/VrglabsLib/releases)
 <div style="margin-left: 40svw"><img src="logo.png" width="100"></img></div>
 
-This project's attempts bring the org.Reflections library to Minecraft architectury
+This project Ports the Org.Reflection library into a minecraft multi-loader enviroment
 
-### Development
+### Supported features/ModLoaders
+1. NeoForge
+2. Fabric
+3. Quilt
+
+### Mod Development
 you can find the Documentation's [Here](https://docs.McReflections.thevrglab.com/)
