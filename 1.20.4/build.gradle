@@ -10,7 +10,7 @@ architectury {
 
 allprojects {
     group = rootProject.maven_group
-    version = rootProject.mod_version
+    version = "$project.name-$rootProject.mod_version-mc$rootProject.minecraft_version"
     repositories {
         mavenCentral()
     }
@@ -23,7 +23,7 @@ subprojects {
 
     base {
         // Set up a suffixed format for the mod jar names, e.g. `MCReflections-fabric`.
-        archivesName = "$rootProject.archives_name-$project.name"
+        archivesName = "$rootProject.archives_name"
     }
 
     repositories {

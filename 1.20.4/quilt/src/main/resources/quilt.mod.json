@@ -3,14 +3,14 @@
   "quilt_loader": {
     "group": "${group}",
     "id": "mc_reflections",
-    "version": "${version}",
+    "version": "${mod_version}",
     "metadata": {
       "name": "Mc Reflections",
-      "description": "This is an MCReflections description! Tell everyone what your mod is about!",
+      "description": "This Project attempts to Port Org.Reflection to a multi-loader environment",
       "contributors": {
-        "Me!": "Author"
+        "Vrglab": "Author"
       },
-      "icon": "assets/mc_reflections/icon.png"
+      "icon": "logo.png"
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "entrypoints": {

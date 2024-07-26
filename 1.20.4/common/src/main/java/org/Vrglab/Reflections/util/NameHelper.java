@@ -1,8 +1,9 @@
 package org.Vrglab.Reflections.util;
 
 import org.Vrglab.Reflections.ReflectionsException;
+import org.jetbrains.annotations.Nullable;
 
-import javax.annotation.Nullable;
+
 import java.lang.reflect.AnnotatedElement;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
