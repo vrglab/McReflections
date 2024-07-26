@@ -206,6 +206,29 @@ public abstract class Vfs {
      * <p>jarInputStream - creates a {@link JarInputDir} over jar files (contains ".jar!/" in it's name), using Java's JarInputStream
      * */
     public enum DefaultUrlTypes implements UrlType {
+        quilt_zfs {
+            @Override
+            public boolean matches(URL url) throws Exception {
+                return url.getProtocol().equals("quilt.zfs");
+            }
+
+            @Override
+            public Dir createDir(URL url) throws Exception {
+                return new Dir() {
+                    @Override
+                    public String getPath() {
+                        return "";
+                    }
+
+                    @Override
+                    public Iterable<File> getFiles() {
+                        return new ArrayList<>();
+                    }
+                };
+            }
+        },
+
+
         union {
             @Override
             public boolean matches(URL url) throws Exception {
