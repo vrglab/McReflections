@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "mc_reflections",
+  "version": "${mod_version}",
+  "name": "Mc Reflections",
+  "description": "This Project attempts to Port Org.Reflection to a multi-loader enviroment",
+  "authors": [
+    "Vrglab"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-MCReflections-mod"
+  },
+  "license": "MIT",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.Vrglab.Reflections.fabric.MCReflectionsModFabric"
+    ],
+    "client": [
+      "org.Vrglab.Reflections.fabric.client.MCReflectionsModFabricClient"
+    ]
+  },
+  "mixins": [
+    "mc_reflections.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "architectury": ">=15.0.1",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

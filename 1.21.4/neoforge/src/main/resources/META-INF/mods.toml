@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "mc_reflections"
+version = "${mod_version}"
+displayName = "Mc Reflections"
+authors = "Vrglab"
+description = '''
+This Project attempts to Port Org.Reflection to a multi-loader enviroment
+'''
+#logoFile = ""
+
+[[dependencies.mc_reflections]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mc_reflections]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "mc_reflections.mixins.json"
